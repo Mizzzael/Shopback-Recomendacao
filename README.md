@@ -5,20 +5,20 @@ o sistema de renderização será acionado, e iniciará o processo de construç�
 o Overlay **ShopBack**.
 >OBS. Após a implementação da tag, todas as configurações são feitas via painel.
 
-Para qualquer overlay ShopBack, a introdução das Peças é feita via [iFrame](/renderizacao/iFrame), o Trackeamento é fieto via
+Para qualquer overlay ShopBack, a introdução das Peças é feita via [iFrame](#Posicionamento), o Trackeamento é fieto via
 tag Tracking, que por sua vez irá executar todo o gerenciamento de coletas para alimentar os feeds do iFrame.
 
 Abaixo segue um descritivo das sessões que compõem esta documentação:
 
 - iFrames
   - [Posicionamento de iFrames](#Posicionamento)
-  - [Conteúdo dos iFrames](#Conteudo)
+  - [Conteúdo dos iFrames](#Conteúdo)
   - [Comportamento das Peças](#Comportamento)
 
 - Recomendação
-  - [Api de Recomendação ShopBack](#ShopBack)
-  - [Api de Recomendação Customizada](#Customizada)
-  - [Triagem de dados via html](#Triagem)
+  - [Api de Recomendação ShopBack](#recomendação-shopback)
+  - [Api de Recomendação Customizada](#recomendação-customizada)
+  - [Triagem de dados via html](#triagem-de-dados-via-html)
 
 
 
@@ -43,15 +43,12 @@ em pontos de referência que são determinados via view, que vão determinando a
 
 ## Embedado
 
-Apesar de seu nome, todos os sistemas consistem em um mesmo sistema de embedagem via iFrames, _mais informações no tópico de [Conteúdo](/iFrames/Conteudo) nessa sessão_,
+Apesar de seu nome, todos os sistemas consistem em um mesmo sistema de embedagem via iFrames, _mais informações no tópico de [Conteúdo](#Conteúdo) nessa sessão_,
 porém a este se reserva o nome de embedado devido ao fato de ser uma forma de mimetização de elementos dos sites hospedeiros,
 como se está fosse parte integral da estrutura mãe, assim o usuário não dependerá de interações especificas para ser impactado.
 
 Este posicionamento consiste em uma seleção com base em um ponto de referência que uma vez determinada seguirá como critério único de coordenadas.
-
-
-
-
+\n\n\n
 # Conteúdo
 
 Por questões de consistência e segurança, a ShopBack optou por fazer a implementação de suas peças via
@@ -60,16 +57,13 @@ S&O.
 
 Atualmente nós utilizamos o [Vue.js](https://vuejs.org/), que constituí uma estrutura consisa, e que não compromete o desempenho da
 página permitindo a criação de peças mais complexas e efetivas sem efeitos colaterais. 
-
-
-
-
+\n\n\n
 # Comportamento
 
 Para que a peça possa alcançar seu intento, nossa tag trabalha com uma serie de trackeamentos via cookie,
 e utms, que são gerenciadas pelas regras de interação das peças, e suas funcionalidades, essas 
 que podem ser complementadas por eventos do ga, ou por Apis customizadas.
->OBS. Para informações referente a produtos seguir a sessão [recomendação](/)
+>OBS. Para informações referente a produtos seguir a sessão [recomendação](#recomendação-shopback)
 
 
 
@@ -88,14 +82,11 @@ um trabalho automatizado que uma vez ativado se retroalimenta de forma autónoma
 
 Essa recomendação pode ser fornecida pela nossa api integrada que pode ser substituída, pois as peças foram criadas,
 dentro de uma estrutura robusta o suficiente para tratar essas informações e portanto permitindo essa mesma dinâmica para apis externas,
-saiba mais no tópico [Recomendação Customizada](/Recomendacao/Customizada).
+saiba mais no tópico [Recomendação Customizada](#recomendação-customizada).
 
 
 ###### * Apesar de sua autonômia, alterações podem ser feitas em tempo de execução.
-
-
-
-
+\n\n\n
 # Recomendação Customizada
 
 Dentro das estruturas das peças, podemos implementar qualquer api que sigam o padrão HTTP, ou SOAP, que, portanto 
@@ -117,7 +108,7 @@ sofisticada, porém ágil, que irá nos fornecer uma recomendação capaz de ser
 
 # Triagem de dados via html
 
-Como colocado no tópico [Recomendação ShopBack](/Recomendacao/ShopBack), nossa tag se utiliza de informações de navegação,
+Como colocado no tópico [Recomendação ShopBack](#recomendação-shopback), nossa tag se utiliza de informações de navegação,
 que servem como parâmetro para a criação do range de recomendações. Porém, existem outras formas, via api, ou via html,
 que tendem a ser mais simples e, portanto mais fácil de se serem implementadas.
 
@@ -125,4 +116,4 @@ Portanto, uma vez uma página acessada seu HTML fica disponível possibilitando 
 dentro do ```<body>``` da página, e que pode se seguir com base em inúmeros critérios, definidos no escopo da campanha, como categoria,
 caracterítica, valor, e outros.
 
->OBS. Essa triagem é feita pela peça e não pela ferramenta, se utilizando do SDK, o mesmo que usamos na [Recomendação Customizada](/Recomendacao/Customizada)
+>OBS. Essa triagem é feita pela peça e não pela ferramenta, se utilizando do SDK, o mesmo que usamos na [Recomendação Customizada](#recomendação-customizada)
