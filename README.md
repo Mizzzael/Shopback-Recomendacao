@@ -58,7 +58,7 @@ S&O.
 
 Atualmente nós utilizamos o [Vue.js](https://vuejs.org/), que constituí uma estrutura consisa, e que não compromete o desempenho da
 página permitindo a criação de peças mais complexas e efetivas sem efeitos colaterais. 
-\n\n\n
+
 # Comportamento
 
 Para que a peça possa alcançar seu intento, nossa tag trabalha com uma serie de trackeamentos via cookie,
