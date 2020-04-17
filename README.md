@@ -52,7 +52,7 @@ Este posicionamento consiste em uma seleção com base em um ponto de referênci
 
 
 
- Conteúdo
+# Conteúdo
 
 Por questões de consistência e segurança, a ShopBack optou por fazer a implementação de suas peças via
 iFrame, pois é uma excelente forma de evitar conflitos de Javascript e CSS, além de não interferir com semânticas de
