@@ -49,7 +49,7 @@ porém a este se reserva o nome de embedado devido ao fato de ser uma forma de m
 como se está fosse parte integral da estrutura mãe, assim o usuário não dependerá de interações especificas para ser impactado.
 
 Este posicionamento consiste em uma seleção com base em um ponto de referência que uma vez determinada seguirá como critério único de coordenadas.
-\n\n\n
+
 # Conteúdo
 
 Por questões de consistência e segurança, a ShopBack optou por fazer a implementação de suas peças via
