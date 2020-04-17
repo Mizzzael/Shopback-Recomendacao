@@ -20,7 +20,8 @@ Abaixo segue um descritivo das sessões que compõem esta documentação:
   - [Api de Recomendação Customizada](#recomendação-customizada)
   - [Triagem de dados via html](#triagem-de-dados-via-html)
 
-
+#iFrames
+======
 
 # Posicionamento
 
@@ -65,7 +66,8 @@ e utms, que são gerenciadas pelas regras de interação das peças, e suas func
 que podem ser complementadas por eventos do ga, ou por Apis customizadas.
 >OBS. Para informações referente a produtos seguir a sessão [recomendação](#recomendação-shopback)
 
-
+#Recomendação
+======
 
 # Recomendação ShopBack
 
