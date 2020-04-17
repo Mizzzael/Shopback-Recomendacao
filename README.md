@@ -88,7 +88,7 @@ saiba mais no tópico [Recomendação Customizada](#recomendação-customizada).
 
 
 ###### * Apesar de sua autonômia, alterações podem ser feitas em tempo de execução.
-\n\n\n
+
 # Recomendação Customizada
 
 Dentro das estruturas das peças, podemos implementar qualquer api que sigam o padrão HTTP, ou SOAP, que, portanto 
@@ -104,8 +104,6 @@ Evidente que isso pode parecer, menos eficiência, porém, as ferramentas ShopBa
 sofisticada, porém ágil, que irá nos fornecer uma recomendação capaz de ser tão impactante quanto a nossa padrão.
 
 ###### *Pode ser feito em casos muito específicos que demandam mais tempo e integrações a nível backend.
-
-
 
 
 # Triagem de dados via html
